@@ -9,6 +9,7 @@ class Kwant < Formula
   depends_on :python => 'numpy'
   depends_on :python => 'scipy'
   depends_on :fortran
+  depends_on 'tinyarray'
   depends_on 'mumps_seq'
 
   def patches
