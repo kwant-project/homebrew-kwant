@@ -3,7 +3,7 @@ require 'formula'
 class Kwant < Formula
   homepage 'www.kwant-project.org'
   url 'downloads.kwant-project.org/kwant/kwant-1.0.0.tar.gz'
-  sha1 'c3cb2ce1cb1064b0fac15d0304a07311cbb5fd12'
+  sha1 '4aa3a078012ee9360e9d7e2c4875b4fcd4b430d4'
 
   depends_on :python => 'numpy'
   depends_on :python => 'scipy'
