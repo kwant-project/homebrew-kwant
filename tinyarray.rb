@@ -2,8 +2,8 @@ require 'formula'
 
 class Tinyarray < Formula
   homepage 'kwant-project.org'
-  url 'http://kwant-project.org/tinyarray/tinyarray-1.0.tar.gz'
-  sha1 'b73ba5ca4780b9641023af6ea31cd6833d2a2735'
+  url 'http://downloads.kwant-project.org/tinyarray/tinyarray-1.0.2.tar.gz'
+  sha1 '953c102dabb7fbc28d3def8da4184e8cf9663995'
 
   depends_on :python
 
