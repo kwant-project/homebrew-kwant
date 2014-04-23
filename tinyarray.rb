@@ -8,7 +8,7 @@ class Tinyarray < Formula
   depends_on :python
 
   def install
-    system python, "setup.py", "install", "--prefix=#{prefix}"
+    system "python", "setup.py", "install", "--prefix=#{prefix}"
   end
 
 end
