@@ -5,8 +5,8 @@ class Kwant < Formula
   url 'downloads.kwant-project.org/kwant/kwant-1.0.0.tar.gz'
   sha1 '4aa3a078012ee9360e9d7e2c4875b4fcd4b430d4'
 
-  depends_on :python => 'numpy'
-  depends_on :python => 'scipy'
+  depends_on 'numpy' => :python
+  depends_on 'scipy' => :python
   depends_on :fortran
   depends_on 'tinyarray'
   depends_on 'mumps_seq'
@@ -19,7 +19,7 @@ class Kwant < Formula
   def install
     inreplace "build.conf", "xxlibgfortranpathxx", "#{Formula.factory('gfortran').opt_prefix}/gfortran/lib"
 
-    system python, "setup.py", "install", "--prefix=#{prefix}"
+    system "python", "setup.py", "install", "--prefix=#{prefix}"
   end
 
 end
