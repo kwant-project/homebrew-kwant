@@ -16,8 +16,11 @@ class Kwant < Formula
     DATA
   end
 
+  # Locate gfortran library
+  libgfortran = `$FC --print-file-name libgfortran.a`.chomp
+
   def install
-    inreplace "build.conf", "xxlibgfortranpathxx", "#{Formula.factory('gfortran').opt_prefix}/gfortran/lib"
+    inreplace "build.conf", "xxlibgfortranpathxx", "#{File.dirname libgfortran}"
 
     system "python", "setup.py", "install", "--prefix=#{prefix}"
   end
