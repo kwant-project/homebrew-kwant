@@ -2,8 +2,8 @@ require 'formula'
 
 class Kwant < Formula
   homepage 'www.kwant-project.org'
-  url 'downloads.kwant-project.org/kwant/kwant-1.0.1.tar.gz'
-  sha1 'eae9562416f4eea5905282a2aaaf8572f93c01ce'
+  url 'downloads.kwant-project.org/kwant/kwant-1.0.2.tar.gz'
+  sha1 'bf35f4c46d4ae5ae639b7c4e831348216551ea0c'
 
   depends_on 'numpy' => :python
   depends_on 'scipy' => :python
