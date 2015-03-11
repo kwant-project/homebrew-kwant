@@ -8,8 +8,8 @@ class Kwant < Formula
   depends_on 'numpy' => :python
   depends_on 'scipy' => :python
   depends_on :fortran
-  depends_on 'basnijholt/kwant/tinyarray'
-  depends_on 'basnijholt/kwant/mumps_seq'
+  depends_on 'tinyarray'
+  depends_on 'mumps_seq'
 
   def patches
     # make a configuration file for the build
