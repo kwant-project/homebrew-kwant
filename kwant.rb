@@ -22,6 +22,10 @@ class Kwant < Formula
 
     inreplace "build.conf", "xxlibgfortranpathxx", "#{File.dirname libgfortran}"
 
+    # Workaround for missing numpy include
+    numpyinclude = `python -c "import numpy; print '-I'+numpy.get_include()"`.chomp
+    ENV['CFLAGS'] = numpyinclude
+
     system "python", "setup.py", "install", "--prefix=#{prefix}"
   end
 
