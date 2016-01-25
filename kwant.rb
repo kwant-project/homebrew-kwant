@@ -2,13 +2,12 @@ require 'formula'
 
 class Kwant < Formula
   homepage 'www.kwant-project.org'
-  url 'pypi.python.org/packages/source/k/kwant/kwant-1.0.4.tar.gz'
+  url 'https://github.com/kwant-project/kwant/archive/v1.2.2.tar.gz'
   sha1 'dd314beb4ddd1281123cc771044278943bc5ed5a'
 
-  depends_on 'numpy' => :python
-  depends_on 'scipy' => :python
+  depends_on 'numpy' => :python3
+  depends_on 'scipy' => :python3
   depends_on :fortran
-  depends_on 'tinyarray'
   depends_on 'mumps_seq'
 
   def patches
