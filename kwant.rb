@@ -20,7 +20,7 @@ class Kwant < Formula
 
     inreplace "build.conf", "xxlibgfortranpathxx", "#{File.dirname libgfortran}"
 
-    system "python", "setup.py", "install", "--prefix=#{prefix}"
+    system "python3", "setup.py", "install", "--prefix=#{prefix}"
   end
 
 end
