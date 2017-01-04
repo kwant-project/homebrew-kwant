@@ -3,7 +3,7 @@ require 'formula'
 class Tinyarray < Formula
   homepage 'kwant-project.org'
   url 'http://downloads.kwant-project.org/tinyarray/tinyarray-1.0.2.tar.gz'
-  sha1 '953c102dabb7fbc28d3def8da4184e8cf9663995'
+  sha256 'e196f56268c0b24254621fee12633632a8a33d1a3a1ad8742a8d8232810ee840'
 
   depends_on :python
 
