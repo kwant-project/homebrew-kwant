@@ -3,7 +3,7 @@ require 'formula'
 class MumpsSeq < Formula
   homepage 'http://graal.ens-lyon.fr/MUMPS/'
   url 'http://mumps.enseeiht.fr/MUMPS_4.10.0.tar.gz'
-  sha1 '904b1d816272d99f1f53913cbd4789a5be1838f7'
+  sha256 'd0f86f91a74c51a17a2ff1be9c9cee2338976f13a6d00896ba5b43a5ca05d933'
 
   depends_on 'scotch5'
   depends_on 'metis4'
